@@ -1,7 +1,7 @@
 [BITS 16]       ; The CPU starts in 16-bit Real Mode
 [ORG 0x7C00]    ; BIOS loads the bootloader at memory address 0x7C00
 
-; Print "Booting ThreadOS..."
+; Print "Booting WeaveOS..."
 mov si, message  ; Load address of the message into SI
 call print_string  ; Call the print function
 
@@ -20,7 +20,7 @@ print_string:
     ret           ; Return from function
 
 ; Message to print
-message db "Booting ThreadOS...", 0
+message db "Booting WeaveOS...", 0
 
 ; Pad the bootloader to exactly 512 bytes (BIOS requirement)
 times 510-($-$$) db 0
