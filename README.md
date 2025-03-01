@@ -19,7 +19,7 @@ WeaveOS is a custom operating system that I am building from scratch. The goal i
 cd bootloader
 nasm -f bin boot.asm -o boot.bin
 ```
-###**Running in QEMU**
+### **Running in QEMU**
 ```
 qemu-system-x86_64 -drive format=raw,file=bootloader/boot.bin
 ```
